@@ -1,3 +1,4 @@
+import os
 import discord
 from message_checker import MessageChecker
 from config_loader import load_config
@@ -28,8 +29,7 @@ class InfernoCop(discord.Client):
 if __name__ == "__main__":
     config_file_path = "config.yaml"
 
-    with open("token.txt", 'r') as token_file:
-        token = token_file.readline()
+    token = os.environ.get("TOKEN")
 
     loaded_config = load_config(config_file_path)
     client = InfernoCop(loaded_config)
