@@ -20,13 +20,21 @@ async def punish_wft(message):
     await message.channel.send("You must change your profile picture to the Washington Football Team logo.")
 
 
-async def punish_gword(message):
-    await message.channel.send("Your name has been changed to goP noipmahC.")
-    await message.author.edit(nick="goP noipmahC")
+async def punish_pog(message):
+    await message.channel.send("You must end each of your messages this week with phrase (p-g, p-gchamp) "
+                               "that you violated this rule with. Failure to comply three times will result "
+                               "in demotion to the Kuso Gaki role until the end of the week.")
 
+# --- DEPRECATED ----------------------------------------------------------------------------------------------------
+
+# async def punish_gword(message):
+#     await message.channel.send("Your name has been changed to goP noipmahC.")
+#     await message.author.edit(nick="goP noipmahC")
+
+# --- PUNISHMENT DICTIONARY -----------------------------------------------------------------------------------------
 
 punishment_dictionary = {
     "next": punish_next,
     "washington_football_team": punish_wft,
-    "g_word": punish_gword
+    "p_g": punish_pog
 }

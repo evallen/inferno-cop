@@ -4,4 +4,4 @@
 illegal_regexes:
   next: "Next ((monday)|(tuesday)|(wednesday)|(thursday)|(friday)|(saturday)|(sunday))"
   washington_football_team: "redskins"
-  g_word: "gamer"
+  p_g: "(?<!un)pog"
