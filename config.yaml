@@ -4,4 +4,4 @@
 illegal_regexes:
   next: "Next ((monday)|(tuesday)|(wednesday)|(thursday)|(friday)|(saturday)|(sunday))"
   washington_football_team: "redskins"
-  p_g: "(?<!un)pog"
+  curse: "((fuck)|(shit)|(bitch)|(arse)|(ass)|(bastard)|(cunt)|(damn)|(retard)|(cock)|(dick)|(balls)|(piss)|(crap)|(cum)|(cuck))"
