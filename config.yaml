@@ -1,7 +1,1 @@
 # Inferno Cop Configuration File
-
-# Illegal regexes
-illegal_regexes:
-  next: "Next ((monday)|(tuesday)|(wednesday)|(thursday)|(friday)|(saturday)|(sunday))"
-  washington_football_team: "redskins"
-  modohype: ":(?!(modohype:)|(modocringe:))\w+:"
