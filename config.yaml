@@ -1,1 +1,7 @@
 # Inferno Cop Configuration File
+
+# How many messages clayton sends until a message appears
+frequency: 10
+
+# ????
+special_chance: 0.001
