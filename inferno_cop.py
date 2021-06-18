@@ -33,8 +33,11 @@ class InfernoCop(discord.Client):
 
         elif message.author.name == "Hekc":
             self.counter_patrick += 1
+            print(f"Patrick has sent {self.counter_patrick} messages.")
+
 
             if self.counter_patrick == self.config["frequency"]:
+                print(f"Resetting counter to zero, as Patrick has sent {self.config["frequency"]} messages.")
                 self.counter_patrick = 0
                 await message.react('847670479116173363')
                 await message.react('847670877063217182')
