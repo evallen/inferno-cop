@@ -15,7 +15,7 @@ class InfernoCop(discord.Client):
         self.cegan_username = "Praise the Morning Lord"
         self.counter_clayton = 0
         self.counter_patrick = 0
-        selt.counter_cegan = 0
+        self.counter_cegan = 0
 
     async def on_ready(self):
         print(f"We have logged in as {client.user}")
