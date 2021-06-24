@@ -31,7 +31,7 @@ class InfernoCop(discord.Client):
             for i in range(20):
                 await message.channel.send(f"https://tenor.com/view/when-the-drip-is-sus-gif-19616035")
 
-        if "cookie" in message.content:
+        if (message.author.name != "Inferno Cop") and ("cookie" in message.content):
             await message.channel.send("""
             Here's a recipe for cookies: Preparation time: 40min
 
