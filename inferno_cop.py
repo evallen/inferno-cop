@@ -30,8 +30,11 @@ class InfernoCop(discord.Client):
             await message.channel.send("**CONGRATULATIONS YOU WON THE SECRET PRIZE YAY 1/1000 CHANCE**")
             for i in range(20):
                 await message.channel.send(f"https://tenor.com/view/when-the-drip-is-sus-gif-19616035")
+        
+        if ("if!ver" in message.content):
+            await message.channel.send(f"Current version: v0.2 (July 7, 2021)")
 
-        if (message.author.name != "Inferno Cop") and ("cookie" in message.content):
+        elif (message.author.name != "Inferno Cop") and ("cookie" in message.content):
             await message.channel.send("""
             Here's a recipe for cookies: Preparation time: 40min
 
