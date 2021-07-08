@@ -54,8 +54,15 @@ Procedure: Preheat the oven to 325 degrees F (165 degrees C). Grease cookie shee
             if self.counter_patrick == (2*self.config["frequency"]):
                 print(f"Resetting counter to zero, as Patrick has sent {self.counter_patrick} messages.")
                 self.counter_patrick = 0
-                await message.add_reaction(client.get_emoji(847670479116173363))
-                await message.add_reaction(client.get_emoji(847670877063217182))
+                rand_num = random.random()
+                if rand_num < 0.9:
+                    await message.add_reaction(client.get_emoji(847670479116173363))
+                    if rand_num < 0.7:
+                        await message.add_reaction(client.get_emoji(847670877063217182))
+                        if rand_num < 0.5:
+                            await message.add_reaction(client.get_emoji(857843356936044544))
+                else:
+                    await message.add_reaction(client.get_emoji(853645188185456640))
 
         elif message.author.name == self.cegan_username:
             self.counter_cegan += 1
